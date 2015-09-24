@@ -1,4 +1,9 @@
 $mainfont: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+$subfont: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+.btn {
+	border-radius: 0px;
+}
 
 .navbar {
 	border-radius: 0;
@@ -12,4 +17,33 @@ $mainfont: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 body > nav > div > div.navbar-header > a {
 	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 400;
+}
+
+.hero {
+	background: url('hero.jpg') no-repeat center center fixed;
+  	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+  	background-size: cover;
+  	height: 500px;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin:0;
+}
+
+.frosty {
+	background: rgba (0,0,0,0.5);
+	color: white;
+	h1, h2 {
+		font-weight: 100;
+		text-transform: uppercase;
+	}
+	top: 65%;
+}
+
+.staticbtn {
+	text-transform: uppercase;
+	font-family: $mainfont;
+	font-weight: 200;
 }
