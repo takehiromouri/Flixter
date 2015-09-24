@@ -1,0 +1,15 @@
+$mainfont: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+.navbar {
+	border-radius: 0;
+	font-family: $mainfont;
+	font-weight: 200;
+	background-color: transparent;
+	color: black;
+	border-style: none;
+}
+
+body > nav > div > div.navbar-header > a {
+	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+}
