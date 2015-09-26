@@ -1,12 +1,38 @@
 <div class="hero">
-	<div class = "frosty col-xs-10 col-xs-offset-1 text-center">
-		<br>
-		<h1>Learn how to code</h1>
-		<br>
-		<h2>Travel the world with your coding skills</h2>
-		<br>
-		<%= link_to 'Learn more', '#', :class => 'btn btn-success staticbtn' %>
-		<br>
+	<nav class="static_nav">
+		<%= link_to 'Flixter', root_url, :class => 'navbar-brand' %>
+		<ul class = "pull-right nav navbar-nav static-nav">
+			<li><%= link_to 'Sign Up',new_user_registration_path %></li>
+             <li><%= link_to 'Log In', new_user_session_path %></li>
+        </ul>
+	</nav>
+	<div class="row">
+		<div class="col-xs-4"></div>
+		<div class = "frosty col-xs-4 text-center">
+			<br>
+			<h1>Learn how to code</h1>
+			<br>
+			<h2>Start coding to live freely</h2>
+			<br>
+			<div class="row">
+				<div class="col-xs-4">
+					<span class ="glyphicon glyphicon-education"></span>
+					<p>Educate yourself with free and paid courses</p>
+				</div>
+				<div class="col-xs-4">
+					<span class ="glyphicon glyphicon-phone"></span>
+					<p>Accessible anytime, anywhere on your preferred device</p>
+				</div>
+				<div class="col-xs-4">
+					<span class ="glyphicon glyphicon-globe"></span>
+					<p>Students and teachers from across the globe</p>
+				</div>
+
+			</div>
+			<%= link_to 'Learn more', '#', :class => 'btn btn-success staticbtn' %>
+			<br />
+		</div>
+		<div class="col-xs-4"></div>
 	</div>
 </div>
 
@@ -16,11 +42,11 @@
 		<h3>Feature 1</h3>
 	</div>
 
-	<div class="col-xs-4">
+	<div class="col-sm-4">
 		<h3>Feature 2</h3>
 	</div>
 
-	<div class="col-xs-4">
+	<div class="col-sm-4">
 		<h3>Feature 3</h3>
 	</div>
 </div>

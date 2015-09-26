@@ -1,8 +1,14 @@
 $mainfont: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 $subfont: "Helvetica Neue",Helvetica,Arial,sans-serif;
+$maincolor: #17AA1C;
 
 .btn {
 	border-radius: 0px;
+}
+
+.static_nav {
+	color: white;
+	font-family: $mainfont;
 }
 
 .navbar {
@@ -10,14 +16,22 @@ $subfont: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-family: $mainfont;
 	font-weight: 200;
 	background-color: transparent;
-	color: black;
-	border-style: none;
+	border-style: solid;
+	border-top: thick solid $maincolor;
 }
 
 body > nav > div > div.navbar-header > a {
 	font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-weight: 400;
+	color: $maincolor;
 }
+
+.navbar-default .navbar-brand {
+	color: $maincolor;
+	font-weight: 400;
+}
+
+.navbar-default .navbar-nav > li > a {}
 
 .hero {
 	background: url('hero.jpg') no-repeat center center fixed;
@@ -25,7 +39,7 @@ body > nav > div > div.navbar-header > a {
  	-moz-background-size: cover;
  	-o-background-size: cover;
   	background-size: cover;
-  	height: 500px;
+  	height: 600px;
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
@@ -34,11 +48,17 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .frosty {
 	color: white;
-	h1, h2 {
+	h1 {
 		font-weight: 200;
 		text-transform: uppercase;
 	}
-	top: 50%;
+	h2 {
+		font-weight: 100;
+	}
+	top: 150px;
+	background-color: rgba(0,0,0,0.5);
+	padding: 15px;
+
 }
 
 .staticbtn {
