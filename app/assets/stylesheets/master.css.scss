@@ -11,6 +11,15 @@ $maincolor: #17AA1C;
 	font-family: $mainfont;
 }
 
+#wrap > div.hero > div:nth-child(1) > nav > a, #wrap > div.hero > div:nth-child(1) > nav > ul > li:nth-child(1) > a, #wrap > div.hero > div:nth-child(1) > nav > ul > li:nth-child(2) > a {
+	color: $maincolor;
+}
+
+#wrap > div.hero > div:nth-child(1) > nav > a {
+	font-size: 20px;
+}
+
+
 .navbar {
 	border-radius: 0;
 	font-family: $mainfont;
@@ -31,14 +40,16 @@ body > nav > div > div.navbar-header > a {
 	font-weight: 400;
 }
 
-.navbar-default .navbar-nav > li > a {}
+.nav > li > a:hover, .nav > li > a:focus {
+	background-color: transparent;
+}
+
 
 .hero {
 	background: url('hero.jpg') no-repeat center center fixed;
   	-webkit-background-size: cover;
  	-moz-background-size: cover;
  	-o-background-size: cover;
-  	background-size: cover;
   	height: 600px;
 }
 
@@ -49,7 +60,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 .frosty {
 	color: white;
 	h1 {
-		font-weight: 200;
+		font-weight: 300;
 		text-transform: uppercase;
 	}
 	h2 {
@@ -57,7 +68,7 @@ h1, h2, h3, h4, h5, h6, .navbar {
 	}
 	top: 150px;
 	background-color: rgba(0,0,0,0.5);
-	padding: 15px;
+	padding-bottom: 15px;
 
 }
 
@@ -94,4 +105,8 @@ body {
 	border-radius: 3px;
 	padding: 8px;
 	margin: 10px;
+}
+
+.row {
+	margin: 0px;
 }

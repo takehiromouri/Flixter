@@ -33,7 +33,7 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <% if user_signed_in? %>
-              <li><%= link_to 'Sign Out', destroy_user_session_path, :method => :delete %></li>
+              <li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
             <% else %>
               <li><%= link_to 'Sign Up',new_user_registration_path %></li>
               <li><%= link_to 'Log In', new_user_session_path %></li>
@@ -43,13 +43,15 @@
       </div><!-- /.container-fluid -->
     </nav>
   <% end %>
-
+<% if @on_static %>
+<% else %>
   <% if notice.present? %>
      <p class="alert alert-info"><%= notice %></p>
   <% end %>
   <% if alert.present? %>
      <p class="alert alert-danger"><%= alert %></p>
   <% end %>
+<% end %>
 
   <%= yield %>
 </div>

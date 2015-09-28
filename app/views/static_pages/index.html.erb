@@ -1,18 +1,36 @@
 <div class="hero">
-	<nav class="static_nav">
-		<%= link_to 'Flixter', root_url, :class => 'navbar-brand' %>
-		<ul class = "pull-right nav navbar-nav static-nav">
-			<li><%= link_to 'Sign Up',new_user_registration_path %></li>
-             <li><%= link_to 'Log In', new_user_session_path %></li>
-        </ul>
-	</nav>
 	<div class="row">
+		<nav class="static_nav">
+			<%= link_to 'Flixter', root_url, :class => 'navbar-brand' %>
+			<ul class="nav navbar-nav">
+	            <li>
+	              <%= link_to 'See All Courses', courses_path %>
+	            </li>
+          	</ul>
+			<ul class = "pull-right nav navbar-nav static-nav">
+				<% if user_signed_in? %>
+		        	<li><%= link_to 'Log Out', destroy_user_session_path, :method => :delete %></li>
+		        <% else %>
+					<li><%= link_to 'Sign Up',new_user_registration_path %></li>
+		            <li><%= link_to 'Log In', new_user_session_path %></li>
+		        <% end %>
+	        </ul>
+		</nav>
+	</div>
+	<div class="row">
+		<% if notice.present? %>
+		 	<p class="alert alert-info"><%= notice %></p>
+		<% end %>
+		<% if alert.present? %>
+		 	<p class="alert alert-danger"><%= alert %></p>
+		<% end %>
+
 		<div class="col-xs-4"></div>
 		<div class = "frosty col-xs-4 text-center">
 			<br>
 			<h1>Learn how to code</h1>
 			<br>
-			<h2>Start coding to live freely</h2>
+			<h2>Start coding to start living freely</h2>
 			<br>
 			<div class="row">
 				<div class="col-xs-4">
@@ -27,10 +45,8 @@
 					<span class ="glyphicon glyphicon-globe"></span>
 					<p>Students and teachers from across the globe</p>
 				</div>
-
 			</div>
 			<%= link_to 'Learn more', '#', :class => 'btn btn-success staticbtn' %>
-			<br />
 		</div>
 		<div class="col-xs-4"></div>
 	</div>
