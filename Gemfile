@@ -7,6 +7,8 @@ gem 'sass-rails'
 gem 'devise'
 gem 'simple_form'
 gem 'sprockets', '2.11.0'
+gem 'carrierwave'
+gem 'mini_magick'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
