@@ -9,6 +9,9 @@ gem 'simple_form'
 gem 'sprockets', '2.11.0'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'figaro'
+gem "fog", "~> 1.3.1"
+gem 'carrierwave-aws'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
