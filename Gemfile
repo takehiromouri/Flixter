@@ -13,6 +13,8 @@ gem 'figaro'
 gem "fog", "~> 1.3.1"
 gem 'carrierwave-aws'
 gem 'stripe'
+gem 'ranked-model'
+gem 'jquery-ui-rails'
 
 # Use postgresql as the database for Active Record
 gem 'pg'
