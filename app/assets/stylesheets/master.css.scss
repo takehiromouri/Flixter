@@ -2,6 +2,14 @@ $mainfont: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
 $subfont: "Helvetica Neue",Helvetica,Arial,sans-serif;
 $maincolor: #17AA1C;
 
+body {
+	background: url('hero.jpg') no-repeat center center fixed;
+  	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+ 	-o-background-size: cover;
+  	height: 600px;
+}
+
 .btn {
 	border-radius: 0px;
 }
