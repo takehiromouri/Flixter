@@ -18,7 +18,7 @@
 
 <div id = "wrap">
   <% if @on_static %>
-    <nav class="navbar navbar-default" style = "background-color:transparent;">
+    <nav class="navbar navbar-default" style = "background-color:transparent;border-color:transparent;">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -99,13 +99,37 @@
 
 <br class="clr" />
 
-<div id = "footer">
-  <div class = "container">
-    <b>Footer here</b>
-    <br />
-    <%= link_to 'Teach a Course', new_instructor_course_path %>
+<div id="footer">
+    <div class="container">
+      <div class="col-xs-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', '#' %>
+        <br />
+        <%= link_to 'Careers', '#' %>
+        <br />
+        <%= link_to 'Privacy Policy', privacy_path %>
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        takehiromouri@gmail.com
+        <br />
+        540 Chapel Hill
+        <br />
+        Chapel Hill, NC 27540
+      </div>
+      <div class="col-xs-12 col-sm-3">
+        <b>Social</b>
+      </div>
+    </div>
   </div>
-</div>
-
 </body>
 </html>
